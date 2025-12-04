@@ -5,36 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - WideWeb Cyber</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Page-Specific Container Styling -->
+  <style>
+    .contact-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact-container h4 {
+      margin-bottom: 15px;
+      color: #0066cc;
+      font-size: 22px;
+    }
+
+    .contact-container p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>WideWeb Cyber</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="prices.html">Prices</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <img src="assets/images/logo.jpg" alt="WideWeb Cyber Logo" class="logo-img">
+      <span class="logo-text">WideWeb Cyber</span>
+    </div>
+
+     <nav class="nav classy-nav">
+  <a href="index.html" class="nav-link active">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</nav>
   </header>
 
-  <main>
-    <section class="page-content">
-      <h2>Contact Us</h2>
-      <p>Phone: <a href="tel:+254793516665">+254 793516665</a></p>
-      <p>WhatsApp: <a href="https://wa.me/254700000000">Chat Now</a></p>
-      <p>Email: <a href="widewebcyber@gmail.com">widewebcyber@gmail.com</a></p>
-      <p>Location: Embu,Kiriari,</p>
-      <div id="map">
-        <!-- Embed Google Maps iframe here if needed -->
+  <!-- MAIN CONTENT -->
+  <main style="padding: 40px 20px; max-width: 1000px; margin: auto;">
+
+    <section class="featured-services">
+      <h3>Contact Us</h3>
+
+      <div class="contact-container">
+
+        <h4>Get in Touch</h4>
+
+        <p><strong>Call or WhatsApp:</strong>
+          <a href="tel:+254793516665" style="color:#0066cc;">+254 793 516 665</a>
+        </p>
+
+        <p><strong>WhatsApp:</strong><br>
+          <a href="https://wa.me/254793516665" target="_blank" class="hero-btn" style="padding:10px 18px; display:inline-block; margin-top:8px;">
+            Chat on WhatsApp
+          </a>
+        </p>
+
+        <p><strong>Email:</strong><br>
+          <a href="mailto:widewebcyber@gmail.com" style="color:#0066cc;">
+            widewebcyber@gmail.com
+          </a>
+        </p>
+
+        <p><strong>Location:</strong> Embu, Kiriari</p>
+
+        <div style="margin-top: 25px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.693!2d37.456!3d-0.489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182a4dd9c5d73d79%3A0x8e93f7ef91b2b6d9!2sKiriari%2C%20Embu!5e0!3m2!1sen!2ske!4v1234567890"
+            width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 WideWeb Cyber. All rights reserved.</p>
   </footer>
+
 </body>
 </html>

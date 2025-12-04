@@ -7,52 +7,144 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>WideWeb Cyber</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="prices.html">Prices</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to WideWeb Cyber</h2>
-      <p>Your one-stop solution for printing, photocopy, passport photos, KRA PIN, HELB services, document typing, and more!</p>
-    </section>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <img src="assets/images/logo.jpg" alt="WideWeb Cyber Logo" class="logo-img">
+      <span class="logo-text">WideWeb Cyber</span>
+    </div>
 
-    <section class="featured-services">
-      <h3>Our Popular Services</h3>
-      <div class="services-list">
-        <div class="service-card">
-          <img src="assets/images/placeholder.png" alt="Printing">
-          <h4>Printing</h4>
-        </div>
-        <div class="service-card">
-          <img src="assets/images/placeholder.png" alt="Photocopy">
-          <h4>Photocopy</h4>
-        </div>
-        <div class="service-card">
-          <img src="assets/images/placeholder.png" alt="Passport Photos">
-          <h4>Passport Photos</h4>
-        </div>
+  <nav class="nav classy-nav">
+  <a href="index.html" class="nav-link active">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+</header>
+
+ <!-- HERO SECTION -->
+<section class="hero" style="position: relative; padding: 60px 20px; text-align: center;">
+
+  <!-- Left Image -->
+  <img src="assets/images/cyber doors.jpeg"
+       alt="Cyber Left"
+       style="
+         position: absolute;
+         left: 20px;
+         top: 70%;
+         transform: translateY(-50%);
+         width: 180px;
+         height: 250px;
+         max-width: 25%;
+         border-radius: 10px;
+         display: none;
+       "
+       class="hero-side-img left-img">
+
+  <!-- Right Image -->
+  <img src="assets/images/advert board.jpeg"
+       alt="Cyber Right"
+       style="
+         position: absolute;
+         right: 20px;
+         top: 70%;
+         transform: translateY(-50%);
+         width: 180px;
+         height: 250px;
+         max-width: 25%;
+         border-radius: 10px;
+         display: none;
+       "
+       class="hero-side-img right-img">
+
+  <div class="hero-content">
+    <h2>Fast, Reliable & Affordable Cyber Services</h2>
+    <p>Printing • Photocopy • Passport Photos • KRA • HELB • Typing • Scanning & More</p>
+    <a href="contact.html" class="hero-btn">Get Started</a>
+  </div>
+
+</section>
+
+
+  <!-- FEATURED SERVICES -->
+  <section class="featured-services">
+  <h3>Our Popular Services</h3>
+  <div class="services-wrapper">
+  
+    <div class="services-container" id="services-container">
+      <!-- Service Cards -->
+      <div class="service-card" onclick="openServiceModal('printing')">
+        <img src="assets/images/printer.jpeg" alt="Printing">
+        <h4>Printing & Photocopy</h4>
+      </div>
+
+      <div class="service-card" onclick="openServiceModal('lamination')">
+        <img src="assets/images/laminator.jpeg" alt="Lamination">
+        <h4>Lamination</h4>
+      </div>
+
+      <div class="service-card" onclick="openServiceModal('passport')">
+        <img src="assets/images/passport.jfif" alt="Passport">
+        <h4>Passport Photos</h4>
+      </div>
+
+      <div class="service-card" onclick="openServiceModal('binding')">
+        <img src="assets/images/binding machine.jpeg" alt="Binding">
+        <h4>Binding</h4>
+      </div>
+
+      <div class="service-card" onclick="openServiceModal('kra')">
+        <img src="assets/images/kra.png" alt="KRA Services">
+        <h4>KRA Services</h4>
+      </div>
       </div>
     </section>
+ <!-- FEATURED SERVICES -->
+  <section class="featured-services">
+  <div class="services-wrapper">
+  
+    <div class="services-container" id="services-container">
+      <!-- Service Cards -->
+      <div class="service-card" onclick="openServiceModal('helb')">
+        <img src="assets/images/helb.png" alt="HELB Services">
+        <h4>HELB Services</h4>
+      </div>
 
-    <section class="contact-shortcut">
-      <h3>Contact Us Now</h3>
-      <p>Call or WhatsApp us for quick service!</p>
-      <a href="contact.html" class="btn">Contact</a>
-    </section>
-  </main>
+      <div class="service-card" onclick="openServiceModal('ecitizen')">
+        <img src="assets/images/ecitizen.png" alt="eCitizen Services">
+        <h4>eCitizen Services</h4>
+      </div>
 
+      <div class="service-card" onclick="openServiceModal('sha')">
+        <img src="assets/images/sha.png" alt="SHA Services">
+        <h4>SHA Services</h4>
+      </div>
+
+    <a href="services.html" class="service-card">
+  <img src="assets/images/services.png" alt="Other Services">
+  <h4>All services (detailed)</h4>
+  <p>click to access</p>
+</a>
+
+      </div>
+    </div>
+
+   
+</section>
+
+
+  <!-- CONTACT SHORTCUT -->
+  <section class="contact-shortcut">
+    <h3>Need Quick Service?</h3>
+    <p>Call or WhatsApp us now!</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 WideWeb Cyber. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
