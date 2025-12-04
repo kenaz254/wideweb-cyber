@@ -20,24 +20,24 @@ body {
 
 /* HEADER */
 .header {
-  background: #353434;
-  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 25px;
+  background: #353434;
+  flex-wrap: wrap;
   border-bottom: 2px solid #e5e7eb;
 }
 
-/* LOGO */
 .logo-area {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .logo-img {
-  height: 100px;
-  width: 50%;
-  margin-right: 10px;
+  height: 60px;
+  width: auto;
 }
 
 .logo-text {
@@ -46,46 +46,42 @@ body {
   color: #0066cc;
 }
 
-/* Modern Cyber Glass Navigation */
-/* NAV WRAPPER */
+/* NAVIGATION */
 .classy-nav {
   display: flex;
-  gap: 25px;
-  justify-content: center;
   align-items: center;
-  padding: 12px 25px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  width: fit-content;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-left: auto; /* replaces float:right */
 }
 
-/* Links */
-.classy-nav .nav-link {
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 8px;
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
-  transition: 0.3s ease;
-  white-space: nowrap; /* prevents breaking */
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-/* Hover Glow */
-.classy-nav .nav-link:hover {
-  background: rgba(255,255,255,0.25);
+.nav-link:hover {
+  background: rgba(255,255,255,0.2);
   color: #0066ff;
-  box-shadow: 0 0 10px rgba(0, 102, 255, 0.4);
 }
 
-/* Active Page Glow */
-.classy-nav .nav-link.active {
+.nav-link.active {
   background: #0066ff;
-  color: #fff;
-  box-shadow: 0 0 12px rgba(0, 102, 255, 0.6);
+  color: white;
+}
+
+/* HAMBURGER (hidden on large screens) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
 }
 /* HERO SECTION */
 .hero {

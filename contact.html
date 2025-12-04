@@ -46,13 +46,20 @@
       <span class="logo-text">WideWeb Cyber</span>
     </div>
 
-     <nav class="nav classy-nav">
-  <a href="index.html" class="nav-link active">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="services.html" class="nav-link">Services</a>
-  <a href="contact.html" class="nav-link">Contact</a>
-</nav>
-  </header>
+      <nav class="classy-nav">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+</header>
+<script>function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}</script>
 
   <!-- MAIN CONTENT -->
   <main style="padding: 40px 20px; max-width: 1000px; margin: auto;">

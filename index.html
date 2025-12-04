@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WideWeb Cyber</title>
   <link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
@@ -15,14 +16,20 @@
       <span class="logo-text">WideWeb Cyber</span>
     </div>
 
-  <nav class="nav classy-nav">
-  <a href="index.html" class="nav-link active">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="services.html" class="nav-link">Services</a>
-  <a href="contact.html" class="nav-link">Contact</a>
-</nav>
+   <nav class="classy-nav">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
 </header>
-
+<script>function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}</script>
  <!-- HERO SECTION -->
 <section class="hero" style="position: relative; padding: 60px 20px; text-align: center;">
 
