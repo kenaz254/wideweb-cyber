@@ -47,17 +47,19 @@ body {
 }
 
 /* Modern Cyber Glass Navigation */
+/* NAV WRAPPER */
 .classy-nav {
   display: flex;
   gap: 25px;
   justify-content: center;
+  align-items: center;
   padding: 12px 25px;
-  float: right;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   width: fit-content;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-left: auto; /* replaces float:right */
 }
 
 /* Links */
@@ -68,8 +70,8 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
-  position: relative;
   transition: 0.3s ease;
+  white-space: nowrap; /* prevents breaking */
 }
 
 /* Hover Glow */
@@ -85,8 +87,6 @@ body {
   color: #fff;
   box-shadow: 0 0 12px rgba(0, 102, 255, 0.6);
 }
-
-
 /* HERO SECTION */
 .hero {
   height: 30vh;
@@ -402,16 +402,22 @@ footer {
   color: #0066cc;
 }
 /* Show hero-side images on large screens */
-@media (min-width: 900px) {
-  .hero-side-img {
-    display: block !important;
+@media (max-width: 768px) {
+  .classy-nav {
+    flex-direction: column;  /* stack links vertically */
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
   }
-}
 
-/* Hide images on small screens (to avoid squeezing text) */
-@media (max-width: 899px) {
-  .hero-side-img {
-    display: none !important;
+  .classy-nav .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
   }
 }
 
